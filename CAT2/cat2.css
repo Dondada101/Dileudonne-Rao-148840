@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bground{
+    width: 100%;
+    height: 100vh;
+   background-size: cover;
+   background-image: url(cat2bg.jpeg);
+   background-position: center;
+   position: relative;
+}
+.lbground{
+    width: 100%;
+    height: 100vh;
+   background-size: cover;
+   background-image: url(lcat2.png);
+   background-position: center;
+   position: relative;
+}
+.form{
+    width: 100%;
+    max-width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    /* background-color: #fff; */
+    padding: 50px 60px 70px;
+    border-radius: 30px;  
+}
+.form h2{
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    color: #fff;
+    margin-top: 2px;
+    text-align: center;
+    display: block;
+}
+.form h2::after{
+    content: " ";
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #fff;
+}
+input{
+    width: 100%;
+    background: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+}
+.button{
+    width: 70%;
+    border-radius: 10px;
+}
+.button:hover{
+    background: #555;
+    color: white;
+    cursor: pointer;
+}
+.ifield{
+    margin: 20px 0;
+    border-radius: 3px;
+    /* display: flex; */
+    align-items: center;
+    background-color: gainsboro;
+    max-height: 65px;
+    position: relative;
+}
+.ifield i{
+    position: absolute;
+    padding: 5px;
+    /* color: #999; */
+}
+.f-icon,.s-icon{
+    right: 0;
+    opacity: 0;
+}
+.f-icon{
+    color: red;
+}
+.s-icon{
+    color: green;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+header .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+header .logo span{
+    color:cornflowerblue;
+}
+header .navbar a{
+    color: #fff;
+    font-size: .5rem;
+    margin: 0 .8rem;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color: lightblue;
+}
+header .navbar i{
+    color: #fff;
+    
+}
+.container{
+    min-height: 100vh;
+    background-color: darkseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.container .profile{
+    padding: 20px;
+background-color:#555;
+text-align: centre;
+width: 400px;
+border-radius: 5px;
+}
+.profile .button{
+    background-color: darkseagreen;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+.profile h3{
+    margin: 5px 0;
+    font-size: 20px;
+    color: lightblue;
+}
+.u-profile{
+    min-height: 100vh;
+    background-color: darkseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.u-profile form{
+    padding: 20px;
+background-color:#555;
+text-align: centre;
+width: 400px;
+border-radius: 5px;
+}
+.u-profile .button{
+    background-color: darkseagreen;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    width: 48%;
+}
+.u-profile .button:hover{
+    color: black;
+    background-color: #666;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.u-profile form h3{
+    margin-bottom: 5px;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+
+}
+header .logout a{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: 5px;
+    /* float: right; */
+    transition: 0.4s;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+}
+header .logout a:hover{
+    background: cornflowerblue;
+}
+header .logout p{
+    color: #fff;
+    font-size: 1.5rem;
+}
